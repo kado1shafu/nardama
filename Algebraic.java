@@ -47,7 +47,7 @@ public class Algebraic {
         }
 
         Pair p = mArrayList.get(random.nextInt(mArrayList.size()));
-        System.out.print(" в виде " + p.x + " + " + p.y + " \n");
+        System.out.print(" в виде " + p.x + " * " + p.y + " \n");
         return p;
     }
 

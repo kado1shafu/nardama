@@ -5,8 +5,6 @@ public class Main {
         final Random random = new Random(System.currentTimeMillis());
 
         Expressions expressions = new Expressions();
-        System.out.print(expressions.get_expression(1, 50));
-
+        System.out.print(expressions.get_expression(3, 50));
     }
-
 }
