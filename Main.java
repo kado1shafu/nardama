@@ -5,14 +5,14 @@ public class Main {
     public static void main(String[] args) {
         final Random random = new Random(System.currentTimeMillis());
         ArrayList<Character> domain = new ArrayList<Character>();
-        //domain.add('+');
+        domain.add('+');
         domain.add('-');
         domain.add('/');
         domain.add('*');
         ArrayList<Character> a;
         Expressions expressions = new Expressions();
         for(int i = 0; i < 10; i++)
-            System.out.print(expressions.get_expression(3, 25, 100, domain) + "\n");
+            System.out.print(expressions.get_expression(1, 25, 500, domain) + "\n");
            
     }
 }

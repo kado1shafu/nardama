@@ -26,14 +26,11 @@ public class Expressions {
     }
 
     private ArrayList<Character> get_signs(int n, ArrayList<Character> old_signs) {
-        ArrayList<Character> signs = new ArrayList<>(old_signs);
-        ArrayList<Character> result = new ArrayList<Character>();
-        for(int i = 0; i < n; i++){
-            int pos = random.nextInt(signs.size());
-            result.add(signs.get(pos));
-            signs.remove(pos);
+        ArrayList<Character> result = new ArrayList<Character>(old_signs);
+        for(int i = 4; i != n; i--){
+            int pos = random.nextInt(result.size());
+            result.remove(pos);
         }
-            
         return result;
     }
 
