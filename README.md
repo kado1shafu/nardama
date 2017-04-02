@@ -1,5 +1,5 @@
 # Nardama
-###### This is alpha-version a generator random algebraic expressions. 
+###### This is beta-version a generator random algebraic expressions. 
 It generated expression containing n signs operations (+, -, *, /) in range D.
 
 Examples:
