@@ -5,6 +5,10 @@ public class Main {
         final Random random = new Random(System.currentTimeMillis());
 
         Expressions expressions = new Expressions();
-        System.out.print(expressions.get_expression(3, 50));
+        for(int i = 0; i < 10; i++){
+            int x = random.nextInt(100 - 25) + 25;
+             System.out.print(expressions.get_expression(3, x) + " = " + x + "\n");
+        }
+           
     }
 }

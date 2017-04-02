@@ -4,15 +4,13 @@ import java.util.Random;
 public class Expressions {
 
     public String get_expression(int n, int range) {
-        if (range < 25)
-            return "";
         final Random random = new Random(System.currentTimeMillis());
         ArrayList<Character> a = get_signs(n);
         int x = random.nextInt(range - 20) + 21;
         String s;
         do
             s = new Algebraic(a, x).get_expression();
-        while (s.contains(" 1 ") == true || s.substring(0, 2) == "1 ");
+        while (s.contains("e") == true);
         return s;
     }
 
